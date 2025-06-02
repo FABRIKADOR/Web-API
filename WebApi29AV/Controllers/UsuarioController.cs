@@ -1,49 +1,42 @@
 ﻿using Domain.DTO;
 using Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApi29AV.Services.IServices;
 
 namespace WebApi29AV.Controllers
 {
+    [Authorize] // 🔐 Solo usuarios autenticados
     [ApiController]
     [Route("[controller]")]
     public class UsuarioController : ControllerBase
     {
         private readonly IUsuarioServices _usuarioServices;
 
-        // Constructor que recibe el servicio de usuarios
         public UsuarioController(IUsuarioServices usuarioServices)
         {
             _usuarioServices = usuarioServices;
         }
 
-        // GET /Usuario
-        // Obtiene la lista de todos los usuarios
         [HttpGet]
         public async Task<IActionResult> GetUsers()
         {
             var response = await _usuarioServices.ObtenerUsuarios();
-            return Ok(response); // Retorna 200 OK con los datos
+            return Ok(response);
         }
 
-        // GET /Usuario/{id}
-        // Obtiene un usuario específico por su ID
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetUser(int id)
         {
             return Ok(await _usuarioServices.ById(id));
         }
 
-        // POST /Usuario
-        // Crea un nuevo usuario a partir de los datos enviados en el cuerpo
         [HttpPost]
         public async Task<IActionResult> PostUser(UsuarioRequest request)
         {
             return Ok(await _usuarioServices.Crear(request));
         }
 
-        // PUT /Usuario/editar/{id}
-        // Actualiza la información de un usuario existente
         [HttpPut("editar/{id:int}")]
         public async Task<IActionResult> PutUser(int id, [FromBody] UsuarioRequest request)
         {
@@ -58,8 +51,6 @@ namespace WebApi29AV.Controllers
             return Ok(updatedUser);
         }
 
-        // DELETE /Usuario/eliminar/{id}
-        // Elimina un usuario por su ID
         [HttpDelete("eliminar/{id:int}")]
         public async Task<IActionResult> DeleteUser(int id)
         {

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ElFabrikador\\Downloads\\Cortez_Diego_WebApi29AV-master\\Aguillar_Nowell_WebApi29AV\\WebApi29AV\\WebApi29AV.csproj": {}
+    "D:\\Repos visual morado\\WebApi\\WebApi29AV\\WebApi29AV.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ElFabrikador\\Downloads\\Cortez_Diego_WebApi29AV-master\\Aguillar_Nowell_WebApi29AV\\Domain\\Domain.csproj": {
+    "D:\\Repos visual morado\\WebApi\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ElFabrikador\\Downloads\\Cortez_Diego_WebApi29AV-master\\Aguillar_Nowell_WebApi29AV\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Repos visual morado\\WebApi\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\ElFabrikador\\Downloads\\Cortez_Diego_WebApi29AV-master\\Aguillar_Nowell_WebApi29AV\\Domain\\Domain.csproj",
+        "projectPath": "D:\\Repos visual morado\\WebApi\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\ElFabrikador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ElFabrikador\\Downloads\\Cortez_Diego_WebApi29AV-master\\Aguillar_Nowell_WebApi29AV\\Domain\\obj\\",
+        "outputPath": "D:\\Repos visual morado\\WebApi\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -86,14 +86,14 @@
         }
       }
     },
-    "C:\\Users\\ElFabrikador\\Downloads\\Cortez_Diego_WebApi29AV-master\\Aguillar_Nowell_WebApi29AV\\WebApi29AV\\WebApi29AV.csproj": {
+    "D:\\Repos visual morado\\WebApi\\WebApi29AV\\WebApi29AV.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ElFabrikador\\Downloads\\Cortez_Diego_WebApi29AV-master\\Aguillar_Nowell_WebApi29AV\\WebApi29AV\\WebApi29AV.csproj",
+        "projectUniqueName": "D:\\Repos visual morado\\WebApi\\WebApi29AV\\WebApi29AV.csproj",
         "projectName": "WebApi29AV",
-        "projectPath": "C:\\Users\\ElFabrikador\\Downloads\\Cortez_Diego_WebApi29AV-master\\Aguillar_Nowell_WebApi29AV\\WebApi29AV\\WebApi29AV.csproj",
+        "projectPath": "D:\\Repos visual morado\\WebApi\\WebApi29AV\\WebApi29AV.csproj",
         "packagesPath": "C:\\Users\\ElFabrikador\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ElFabrikador\\Downloads\\Cortez_Diego_WebApi29AV-master\\Aguillar_Nowell_WebApi29AV\\WebApi29AV\\obj\\",
+        "outputPath": "D:\\Repos visual morado\\WebApi\\WebApi29AV\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -115,8 +115,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ElFabrikador\\Downloads\\Cortez_Diego_WebApi29AV-master\\Aguillar_Nowell_WebApi29AV\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\ElFabrikador\\Downloads\\Cortez_Diego_WebApi29AV-master\\Aguillar_Nowell_WebApi29AV\\Domain\\Domain.csproj"
+              "D:\\Repos visual morado\\WebApi\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Repos visual morado\\WebApi\\Domain\\Domain.csproj"
               }
             }
           }
@@ -137,6 +137,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.0, )"

@@ -4022,11 +4022,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ElFabrikador\\Downloads\\Cortez_Diego_WebApi29AV-master\\Aguillar_Nowell_WebApi29AV\\Domain\\Domain.csproj",
+      "projectUniqueName": "D:\\Repos visual morado\\WebApi\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "C:\\Users\\ElFabrikador\\Downloads\\Cortez_Diego_WebApi29AV-master\\Aguillar_Nowell_WebApi29AV\\Domain\\Domain.csproj",
+      "projectPath": "D:\\Repos visual morado\\WebApi\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\ElFabrikador\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ElFabrikador\\Downloads\\Cortez_Diego_WebApi29AV-master\\Aguillar_Nowell_WebApi29AV\\Domain\\obj\\",
+      "outputPath": "D:\\Repos visual morado\\WebApi\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
